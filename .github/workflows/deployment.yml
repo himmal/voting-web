@@ -1,0 +1,31 @@
+name: Deployment
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install package dependencies
+        run: npm install
+      - name: Build app
+        run: yarn predeploy
+        env:
+          REACT_APP_API_SERVER: ${{secrets.REACT_APP_API_SERVER}}
+      - name: Deploy app
+        run: |
+          cd ./build
+          git init
+          git config user.email "himll287@gmail.com"
+          git config user.name "Him Lam"
+          git remote add origin https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/himmal/voting-web.git
+          git checkout -b gh-pages
+          git add --all
+          git commit -m "deploy to github pages"
+          git push origin gh-pages -f
+          echo deploy gh-pages complete.
