@@ -2,7 +2,7 @@
   "name": "voting-web",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://himmal.github.io",
+  "homepage": "https://himmal.github.io/voting-web/",
   "author": "Him Lam <himll287@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -24,6 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "CI=false && react-scripts build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
