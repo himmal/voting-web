@@ -1,6 +1,6 @@
-# Web-Voting-System
+# Web-Voting-Page
 
-This is a simple web voting app.
+This is a simple web voting page. Demo: https://himmal.github.io/voting-web/
 
 - [Introduction](#introduction)
 - [Requirement](#requirement)
