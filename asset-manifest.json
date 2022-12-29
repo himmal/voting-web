@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/voting-web/static/css/main.c2cab247.css",
+    "main.js": "/voting-web/static/js/main.2e21542c.js",
+    "static/js/787.4d292d61.chunk.js": "/voting-web/static/js/787.4d292d61.chunk.js",
+    "index.html": "/voting-web/index.html",
+    "static/media/eyeFill.svg": "/voting-web/static/media/eyeFill.bb5a4e6fd60400167c5055bfb8ae1f3e.svg",
+    "main.c2cab247.css.map": "/voting-web/static/css/main.c2cab247.css.map",
+    "main.2e21542c.js.map": "/voting-web/static/js/main.2e21542c.js.map",
+    "787.4d292d61.chunk.js.map": "/voting-web/static/js/787.4d292d61.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.2e21542c.js"
+  ]
+}
