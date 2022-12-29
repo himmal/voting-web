@@ -80,14 +80,14 @@ function ListBody() {
 
   const getCampaign = async () => {
     let result = await fetchCampaign("campaign");
-    if (result.length > 0) {
+    if (result?.length > 0) {
       setCampaignList([...result]);
     }
   };
 
   const getEndedCampaign = async () => {
     let result = await fetchCampaign("endedCampaign");
-    if (result.length > 0) {
+    if (result?.length > 0) {
       setEndedCampaignList([...result]);
     }
   };
