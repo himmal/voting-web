@@ -56,7 +56,7 @@ export const Candidates = React.memo(function Candidates({
       }
 
       if (result.data) {
-        setVoted(true);
+        // setVoted(true); //For testing multi voting only
         setItem(result[1] - candidates[0].id);
       }
     }
